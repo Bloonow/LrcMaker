@@ -75,7 +75,7 @@ public class AudioControlFragment extends Fragment {
             @Override
             public void onProgressChanged(SeekBar seekBar, int position, boolean fromUser) {
                 if (fromUser) {
-                    mMediaPlayer.seekTo(position);
+//                    mMediaPlayer.seekTo(position);
                     mTimeProportionText.setText(timeProportion());
                 }
             }
@@ -87,12 +87,12 @@ public class AudioControlFragment extends Fragment {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
+                mMediaPlayer.seekTo(seekBar.getProgress());
             }
         });
 
         mTimeProportionText = view.findViewById(R.id.id_time_proportion_text);
-        mTimeProportionText.setText("0 : 0 / 0 : 0");
+        mTimeProportionText.setText(timeProportion());
 
         mBackwardButton = view.findViewById(R.id.id_backward_button);
         mPlayPauseButton = view.findViewById(R.id.id_play_pause_button);
