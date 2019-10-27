@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LrcMaker</string>
+    <string name="text_file_info">FileInfo</string>
+    <string name="text_start">开始</string>
+    <string name="text_choose_music">选择音乐文件</string>
+    <string name="text_choose_lyric">选择歌词文件</string>
+    <string name="text_get_filename">Done</string>
+    <string name="text_finished">完成</string>
+    <string name="text_temp_save">暂存</string>
+    <string name="text_next_line">下一行</string>
+    <string name="text_pre_line">上一行</string>
+    <string name="text_nothing">##########</string>
+    <string name="text_guidance">使用说明</string>
+    <string name="text_input_lyric_manual">手动输入歌词</string>
+    <string name="text_hint_input_lyric_manual">请在此处手动输入歌词</string>
+    <string name="text_ok">确定</string>
+</resources>
